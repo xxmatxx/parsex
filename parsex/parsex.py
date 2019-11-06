@@ -2,6 +2,13 @@ import re
 from parsex.util import Parser, updateParserState, updateParserResult, updateParserError
 
 def lazy(parserThunk):
+    """Enable define parser in recursive way.
+    
+    Args:
+        parserThunk: Function whitch return parser.
+    Returns:
+        Return parser.
+    """
     def fn(parserState):
         parser = parserThunk()
         return parser.parserStateTransformerFn(parserState)
