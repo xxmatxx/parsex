@@ -5,7 +5,11 @@ Parsex is python naive implementation of parser combinators created according to
 
 
 
-## Instal instruction 
+## Instal instruction
+Run in comand line:
+```
+pip install git+https://github.com/xxmatxx/parsex.git
+```
 ## Better alternatives
 - https://github.com/pyparsing/pyparsing
 - https://github.com/lark-parser/lark
